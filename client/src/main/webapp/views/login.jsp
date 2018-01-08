@@ -1,23 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-<<<<<<< HEAD
     pageEncoding="ISO-8859-1"%>
 
-=======
-	pageEncoding="ISO-8859-1"%>
+
+
 <%@ taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
->>>>>>> e5a091410151898c325296c69aa33c2e182d436d
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<<<<<<< HEAD
+
 <title>Insert title here</title>
 
 
 </head>
 <body>
 <p>hello</p>
-=======
+
 <link type="text/css" rel="stylesheet" href="<c:url value="/css/design.css" />" />
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="<c:url value='/js/index.js'/>"></script>
@@ -76,7 +75,6 @@
 		</div> <!-- /.modal-content -->
 	</div> <!-- /.modal-dialog -->
 </div> <!-- /.modal -->
->>>>>>> e5a091410151898c325296c69aa33c2e182d436d
 
 </body>
 </html>
