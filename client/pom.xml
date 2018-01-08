@@ -43,6 +43,7 @@
 
 		<dependency>
 
+<<<<<<< HEAD
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
@@ -52,6 +53,14 @@
 		<scope>provided</scope>
 	</dependency>
 
+=======
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-jasper</artifactId>
+</dependency>
+
+			
+
+>>>>>>> 1c82d3efe3f147d2dfeb79f43684926af1804883
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
