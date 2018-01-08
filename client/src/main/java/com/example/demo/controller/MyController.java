@@ -1,14 +1,12 @@
 package com.example.demo.controller;
 
-<<<<<<< HEAD
 import java.util.ArrayList;
 
-=======
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
->>>>>>> e5a091410151898c325296c69aa33c2e182d436d
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
