@@ -15,27 +15,23 @@
 <script type="text/javascript" src="<c:url value='/js/dashboard.js'/>"></script>
 <title>Login</title>
 </head>
-<body>
+<body onload="hello()">
 	<div class="tab">
 		<button class="tablinks" onclick="openCity(event, 'London')">London</button>
 		<button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
 		<button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
 	</div>
-
 	<div id="London" class="tabcontent">
-		<h3>London</h3>
-		<p>London is the capital city of England.</p>
+		Add Category : <input type="text" name="addcategory" id="addCategory"> <input type="button" onclick="insertCategory()" value="Add">
+		   <div><table id='numbers'></table></div>
 	</div>
-
 	<div id="Paris" class="tabcontent">
 		<h3>Paris</h3>
 		<p>Paris is the capital of France.</p>
 	</div>
-
 	<div id="Tokyo" class="tabcontent">
 		<h3>Tokyo</h3>
 		<p>Tokyo is the capital of Japan.</p>
 	</div>
-
 </body>
 </html>

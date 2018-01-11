@@ -24,7 +24,9 @@
 				  window.location.href = 'http://localhost:9000/onlineclient/dashboard';
 			  },
 			  error: function(error) {
+				  console.log(error);
 				  alert("Error "+error);
+				  
 			  }
 			});
 	}

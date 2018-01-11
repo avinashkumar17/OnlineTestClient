@@ -11,3 +11,23 @@ function openCity(evt, cityName) {
 	document.getElementById(cityName).style.display = "block";
 	evt.currentTarget.className += " active";
 }
+function hello() {
+	var h = document.getElementById("London");
+	h.style.display = "block";
+}
+function test(id) {
+    $('#'+id).closest('tr').remove(); 
+}
+
+function insertCategory() {
+	var category = $('#addCategory').val();
+	
+	
+	/*$('#numbers').append('<tr><td> Category : </td></tr>');
+	$('#numbers tr:last')
+			.after(
+					'<tr><td> '
+							+ category
+							+ ' </td><td><input type="button" value="Remove" onclick="test(this.id)" id="'
+							+ category + '"></td></tr>');*/
+}

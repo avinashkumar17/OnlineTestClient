@@ -1,38 +1,24 @@
+<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-<<<<<<< HEAD
 	pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
-=======
-    pageEncoding="ISO-8859-1"%>
 
-
-
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
-
->>>>>>> 1c82d3efe3f147d2dfeb79f43684926af1804883
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<<<<<<< HEAD
+
 <title>Insert title here</title>
 <link type="text/css" rel="stylesheet"
 	href="<c:url value="/css/design.css" />" />
-=======
-
 <title>Insert title here</title>
-
-
-</head>
-<body>
-<p>hello</p>
-
-<link type="text/css" rel="stylesheet" href="<c:url value="/css/design.css" />" />
->>>>>>> 1c82d3efe3f147d2dfeb79f43684926af1804883
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="<c:url value='/js/index.js'/>"></script>
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="<c:url value="/css/design.css" />" />
+
+<script type="text/javascript" src="<c:url value='/js/index.js'/>"></script>
+
 <title>Login</title>
 </head>
 <body>
@@ -67,43 +53,32 @@
 					<hr>
 				</div>
 			</div>
-<<<<<<< HEAD
-			<!-- /.col-xs-12 -->
 		</div>
-		<!-- /.row -->
-	</div>
-	<!-- /.container --> </section>
-=======
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-				<button type="button" class="btn btn-custom">Recovery</button>
-			</div>
-		</div> <!-- /.modal-content -->
-	</div> <!-- /.modal-dialog -->
-</div> <!-- /.modal -->
->>>>>>> 1c82d3efe3f147d2dfeb79f43684926af1804883
-
-	<div class="modal fade forget-modal" tabindex="-1" role="dialog"
-		aria-labelledby="myForgetModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">
-						<span aria-hidden="true">×</span> <span class="sr-only">Close</span>
-					</button>
-					<h4 class="modal-title">Recovery password</h4>
-				</div>
-				<div class="modal-body">
-					<p>Type your email account</p>
-					<input type="email" name="recovery-email" id="recovery-email"
-						class="form-control" autocomplete="off">
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-					<button type="button" class="btn btn-custom">Recovery</button>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+			<button type="button" class="btn btn-custom">Recovery</button>
+		</div>
+		<div class="modal fade forget-modal" tabindex="-1" role="dialog"
+			aria-labelledby="myForgetModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">×</span> <span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title">Recovery password</h4>
+					</div>
+					<div class="modal-body">
+						<p>Type your email account</p>
+						<input type="email" name="recovery-email" id="recovery-email"
+							class="form-control" autocomplete="off">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-custom">Recovery</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 </body>
 </html>
