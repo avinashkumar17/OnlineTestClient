@@ -6,6 +6,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"
+	type="text/javascript" language="javascript"></script>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script type="text/javascript"
@@ -13,7 +15,12 @@
 <link type="text/css" rel="stylesheet"
 	href="<c:url value="/css/dashboard.css" />" />
 <script type="text/javascript" src="<c:url value='/js/dashboard.js'/>"></script>
-<title>Login</title>
+
+ <link id="themecss" rel="stylesheet" type="text/css" href="//www.shieldui.com/shared/components/latest/css/light/all.min.css" />
+    <script type="text/javascript" src="//www.shieldui.com/shared/components/latest/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="//www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
+<title>Dashboard</title>
 </head>
 <body onload="hello()">
 	<div class="tab">
@@ -22,8 +29,17 @@
 		<button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
 	</div>
 	<div id="London" class="tabcontent">
-		Add Category : <input type="text" name="addcategory" id="addCategory"> <input type="button" onclick="insertCategory()" value="Add">
-		   <div><table id='numbers'></table></div>
+		Add Category : <input type="text" name="addcategory" id="addCategory">
+		<input type="button" onclick="insertCategory()" value="Add"> <a
+			class="editor_create">Create new record</a>
+			<table id="one">
+	<tbody>
+
+    </tbody>
+    
+    <div id="grid"></div>
+    
+    </table>
 	</div>
 	<div id="Paris" class="tabcontent">
 		<h3>Paris</h3>

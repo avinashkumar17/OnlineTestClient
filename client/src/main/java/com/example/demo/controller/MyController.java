@@ -4,6 +4,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -50,6 +52,21 @@ public class MyController {
 		return "dashboard";
 	}
 	
+	@RequestMapping("getCategory")
+	public ResponseEntity<String> getCategory(HttpServletRequest request) {
+		/*session= request.getSession();
+		 Object sessionValue =session.getAttribute(mAuthorization);
+		
+		System.out.println("SessionValue" + sessionValue);
+		if (sessionValue == null) {
+			System.out.println("Null SessionValue");
+			return "redirect:login";
+		}*/
+		
+		String mCategory = cli.getCategory();
+		
+		return new ResponseEntity<String>(mCategory, null, HttpStatus.OK);
+	}
 	
 	@RequestMapping("addCategory")
 	public String addCategory(String addCategory, HttpServletRequest request) {
@@ -65,6 +82,35 @@ public class MyController {
 		
 		
 		return "";
+	}
+	
+	@RequestMapping("remove")
+	public String removeCategory(int id, HttpServletRequest request) {
+		/*session= request.getSession();
+		 Object sessionValue =session.getAttribute(mAuthorization);
+		
+		System.out.println("SessionValue" + sessionValue);
+		if (sessionValue == null) {
+			System.out.println("Null SessionValue");
+			return "redirect:login";
+		}*/
+		String response = cli.removecat(id);
+		return response;
+	}
+	
+	@RequestMapping("editCategory")
+	public String editCategory(int id, String category, HttpServletRequest request) {
+		/*session= request.getSession();
+		 Object sessionValue =session.getAttribute(mAuthorization);
+		
+		System.out.println("SessionValue" + sessionValue);
+		if (sessionValue == null) {
+			System.out.println("Null SessionValue");
+			return "redirect:login";
+		}*/
+		System.out.println(id+" : "+category);
+		String response = cli.editCategory(id, category);
+		return response;
 	}
 
 }
