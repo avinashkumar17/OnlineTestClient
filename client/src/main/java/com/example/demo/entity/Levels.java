@@ -33,5 +33,4 @@ public class Levels {
 	public void setCategory(Category category) {
 		this.category = category;
 	}
-
 }
